@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Herr+Von+Muellerhoff&family=Source+Sans+Pro:wght@400;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>MENU</title>
+    <style>
+        
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            background-image: url("img/pc5.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+
+        
+        .buy1 {
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-wrap: wrap;
+            height: 350px;
+            margin-top: 50px;
+            justify-content: space-around;
+        }
+
+        .box1 {
+            border: 2px solid white;
+            background-image: url("img/pc1.jpg");
+            width: 300px;
+            padding: 10px;
+            margin-top: 9px;
+            height: 300px;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 15px;
+        }
+
+        .box2 {
+            border: 2px solid white;
+            background-image: url("img/pc3.jpg");
+            background-size: cover;
+            width: 300px;
+            height: 300px;
+            padding: 10px;
+            margin-top: 9px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 15px;
+        }
+
+        .box3 {
+            border: 2px solid white;
+            background-image: url("img/pexels-dima-valkov-3864682.jpg");
+            background-size: cover;
+            width: 300px;
+            height: 300px;
+            padding: 10px;
+            margin-top: 9px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 15px;
+        }
+
+        .buy2 {
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-wrap: wrap;
+            height: 350px;
+            margin-top: 50px;
+            justify-content: space-around;
+
+        }
+
+        .box4 {
+            border: 2px solid white;
+            background-image: url("img/pc11.jpg");
+            background-size: cover;
+            width: 300px;
+            height: 300px;
+            padding: 10px;
+            margin-top: 9px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 15px;
+        }
+
+        .box5 {
+            border: 2px solid white;
+            background-image: url("img/pc12.jpg");
+            background-size: cover;
+            width: 300px;
+            height: 300px;
+            padding: 10px;
+            margin-top: 9px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 15px;
+        }
+
+        .box6 {
+            border: 2px solid white;
+            border-radius: 15px;
+            background-image: url("img/pc13.jpg");
+            background-size: cover;
+            width: 300px;
+            height: 300px;
+            padding: 10px;
+            margin-top: 9px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .he {
+            font-family: initial;           
+            font-style: italic;
+            font-size: 65px;
+            color: yellow;
+        }
+
+        .btn2 {
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            font-family: cursive;
+            background-color: yellow;
+        }
+
+        .btn2:hover {
+            background-color: transparent;
+            border: 2px solid white;
+        }
+
+        @media screen and (max-width: 940px) {
+            .buy1,
+            .buy2{
+                min-height: 650px;
+            }
+
+            .box1,
+            .box2,
+            .box3,
+            .box4,
+            .box5,
+            .box6 {
+                width: 45%;
+                margin: 10px 20px;
+            }
+        }
+
+        @media screen and (max-width: 830px) {
+            .buy1,
+            .buy2{
+                min-height: 1050px;
+            }
+
+            .box1,
+            .box2,
+            .box3,
+            .box4,
+            .box5,
+            .box6 {
+                width: 70%;
+                margin: 10px 20px;
+            }
+
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+                <a href="index.html" class="logo"><img src="img/logo-rosa.png" alt="image not found"></a>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="menu.html" class="nav-link">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="news.html" class="nav-link">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="form.html" class="nav-link">Reservation Form</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="buy1">
+        <div class="box1">
+            <h1 class="he">chowmin</h1>
+            <button class="btn2">buynow</button>
+        </div>
+        <div class="box2">
+            <h1 class="he">supersalad</h1>
+            <button class="btn2">buynow</button>
+        </div>
+        <div class="box3">
+            <h1 class="he">burger</h1>
+            <button class="btn2">buynow</button>
+        </div>
+    </div>
+    <div class="buy2">
+        <div class="box4">
+            <h1 class="he">snacks</h1>
+            <button class="btn2">buynow</button>
+        </div>
+        <div class="box5">
+            <h1 class="he">pizza</h1>
+            <button class="btn2">buynow</button>
+        </div>
+        <div class="box6">
+            <h1 class="he">C.B</h1>
+            <button class="btn2">buynow</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="back-to-top">
+                <a href="#"><i class="fas fa-chevron-up"></i></a>
+            </div>
+            <div class="footer-content">
+                <div class="footer-content-about animate-up">
+                    <h4>About Rosa</h4>
+                    <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam et excepturi, quidem distinctio
+                        officia consequatur eos tempora animi magni dicta unde voluptatum expedita molestias earum dolores
+                        quam doloribus molestiae eum?
+                    </p>
+                </div>
+                <div class="footer-content-divider animate-bottom">
+                    <div class="social-menu">
+                        <h4>Follow along</h4>
+                        <ul class="social-icons">
+                            <li>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-pinterest"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="newsletter-container">
+                        <h4>Newsletter</h4>
+                        <form action="" class="newsletter-form">
+                            <input type="text" class="newsletter-input" placeholder="Your email address...">
+                            <button class="newsletter-btn" type="submit"><i class="fas fa-envelope"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

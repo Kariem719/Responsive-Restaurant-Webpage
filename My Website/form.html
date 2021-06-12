@@ -1,0 +1,325 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Herr+Von+Muellerhoff&family=Source+Sans+Pro:wght@400;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>RESERVATION FORM</title>
+    <script type="text/javascript" src="form.js"></script>
+    <style>
+
+        body {
+            background-image: url(img/form.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            font-family: 'Cabin', sans-serif;
+            color: #515151;
+            font-size: 2rem;
+        }
+
+        .container1 {
+            position: relative;
+            top: -30px;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: inset -1px -1px 5px 0px #cdb6b6;
+        }
+
+        input[type=submit] {
+            position: absolute;
+            left: calc(120%/2);
+            bottom: 70px;
+            width: 20%;
+            padding: 12px 10px;
+            cursor: pointer;
+        }
+
+        .container1 div {
+            margin: 15px 0;
+        }
+
+        .container1 div::after {
+            content: "";
+            clear: both;
+            display: table;
+        }        
+
+        .container1 div .label {
+            float: left;
+            width: 25%;
+        }
+        
+        .container1 div.in {
+            float: left;
+            width: 65%;
+            margin-left: -50px;
+        }
+
+        .text10,
+        #telephone,
+        input[type=email],
+        input[type=password],
+        input[type=number] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background: linear-gradient( to right, rgb(153 154 157 / 90%), rgb(164 161 126 / 30%));
+            font-size: 15px;       
+        }
+
+        .radio1,
+        .radio2 {
+            display: inline-block;
+        }
+
+        .radio2 {
+            padding-left: 20px;
+        }
+
+        .pass_in::after {
+            content: "Password must contain only 8 characters: starts with uppercase character, one special character, one digit at least and lowercase characters" !important;
+            display: none !important;
+            width: 60%;
+            border-radius: 5px;
+            min-height: 35px;
+            background :#6a714975;
+            color: #515151;
+            font-size: 1.5rem;
+            position: relative;
+            top: -5px;
+            left: calc(45%/2);
+        }
+
+        .pass_in:hover::after {
+            display: block !important;
+        }
+
+        @media screen and (max-width: 1070px) {
+            .container1 div.in {
+                position: relative;
+                left: 50px;
+            }
+
+            .pass_in::after {
+                top: 5px;
+                left: calc(55%/2);
+            }
+
+            input[type=submit] {
+                left: calc(130%/2);
+            }
+        } 
+
+
+
+
+        @media screen and (max-width: 800px) {
+            .container1 div .label,
+            .container1 div.in {
+                float: none;
+                width: 70%;
+            }
+
+            .container1 div.in {
+                margin: 5px auto;
+            }
+
+            .pass_in::after {
+                top: 5px;
+                left: calc(55%/2);
+            }
+
+            input[type=submit] {
+                left: calc(130%/2);
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+                <a href="index.html" class="logo"><img src="img/logo-rosa.png" alt="image not found"></a>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="menu.html" class="nav-link">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="news.html" class="nav-link">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="form.html" class="nav-link">Reservation Form</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- form -->
+    <section>
+        <div class="container1" style="width: 100%; min-height: 500px;">
+            <form action="index.html" method="GET" id="contactForm">
+                <div>
+                    <div class="label">
+                        <label>First Name</label>
+                    </div>
+                    <div class="in">
+                        <input autofocus class="text10" type="text" name="first_name" id="FN" placeholder="First Name is required !" >
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="label">
+                        <label>Last Name</label>
+                    </div>
+                    <div class="in">
+                        <input  class="text10" type="text" name="last_name" id="LN" placeholder="Last Name is required !">
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="label">
+                        <label>E-Mail</label>
+                    </div>
+                    <div class="in">
+                        <input id="email" type="email" name="Email" placeholder="E-mail is required !">
+                    </div>
+                </div>
+
+                <div class="pass_in">
+                    <div class="label">
+                        <label>Password</label>
+                    </div>
+                    <div class="in">
+                        <input id="password" type="password" name="password" placeholder="Password is required !">
+                    </div>
+                </div>
+
+                <div>
+                    <div class="label">
+                        <label>Phone Number</label>
+                    </div>
+                    <div class="in">
+                        <input id="telephone" type="text" name="telephone" placeholder="Your phone in the form(...-...-....) ">
+                    </div>
+                </div>
+            
+                <div>
+                    <div class="label">
+                        <label>Address</label>
+                    </div>
+                    <div class="in">
+                        <input  id="address" class="text10" type="text" name="Address" placeholder="address is required !">
+                    </div>
+                </div>
+
+                <div>
+                    <div class="label">
+                        <label>Company Number</label>
+                    </div>
+                    <div class="in">
+                        <input type="number" name="Company Number" value="1">
+                    </div>
+                </div>
+
+               <div>
+                    <div class="label">
+                        <label>Gender</label>
+                    </div>
+                    <div class="in">
+                        <div class="radio1">
+                            <input required id="gen1" type="radio" name="gender" value="male">
+                            <label for="gen1">Male</label>
+                        </div>
+                        <div class="radio2">
+                            <input id="gen2" type="radio" name="gender" value="female">
+                            <label for="gen2">Female</label>
+                        </div>
+                       
+                    </div>
+               </div>
+                <input type="submit" value="Reserve">
+            </form>
+        </div>
+    </section>
+              
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="back-to-top">
+                <a href="#"><i class="fas fa-chevron-up"></i></a>
+            </div>
+            <div class="footer-content">
+                <div class="footer-content-about animate-up">
+                    <h4>About Rosa</h4>
+                    <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam et excepturi, quidem distinctio
+                        officia consequatur eos tempora animi magni dicta unde voluptatum expedita molestias earum dolores
+                        quam doloribus molestiae eum?
+                    </p>
+                </div>
+                <div class="footer-content-divider animate-bottom">
+                    <div class="social-menu">
+                        <h4>Follow along</h4>
+                        <ul class="social-icons">
+                            <li>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-pinterest"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="newsletter-container">
+                        <h4>Newsletter</h4>
+                        <form action="" class="newsletter-form">
+                            <input type="text" class="newsletter-input" placeholder="Your email address...">
+                            <button class="newsletter-btn" type="submit"><i class="fas fa-envelope"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+            
+            
+        
+
+   
